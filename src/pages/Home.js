@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Search from '../components/Search';
+import Cards from '../components/Cards';
 
 const Home = () => {
-  return (
+  const [searchString, setSearchString] = useState('');
+  const handleSearchStringUpdate = (searchString) => {
+    setSearchString(searchString);
+  }
+  return (    
     <>
-        Hello Page
+      <Search searchStringUpdated={handleSearchStringUpdate} />
+      <Cards searchString={searchString} />
     </>
   );
 }
