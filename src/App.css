@@ -1,5 +1,5 @@
 /*  Write your styles here  */
-/* Layout Section*/
+/* Slider Section*/
 *,*::before,*::after { 
     box-sizing: border-box;
     margin: 0;
@@ -51,3 +51,83 @@ slider-market-raw {
     left: 50%;
     transform: translatex(-50%);
 }
+/*Cards Styling*/
+.card_title {
+    color: black;
+    margin-left: 30px;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    gap: 2rem;
+    justify-content: center;
+}
+.card {
+    overflow: hidden;
+    box-shadow: 0 20px 20px #e1e1e1;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+.card_body {
+    text-align: center;
+}
+.card_title {
+    padding: 1rem;
+}
+.card_btn {
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solide #d50000;
+    background: transparent;
+    color: #d50000;
+    border-radius: 0.2rem;
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.card:hover .card_btn{
+    background: #d50000;
+    color: white;
+}
+/*End of Cards Section*/
+/* Chart Section*/
+hr {
+    border: 0;
+    clear: both; display: block;
+    width: 140%;
+    background-color: black;
+    height: 1px;
+}
+.stock-row {
+    text-align: center;
+}
+.stock-column-data {
+    margin-top: 6rem;
+}
+.summary-span {
+    color: #191970;
+    font-weight: bold;
+    }
+.stock-headings { 
+    margin-top: 2.7rem;
+}
+.stock-column-chart {
+    padding: 10px;
+    text-align: center;
+}
+
+.chart-true {
+    background-color: #FFCCCC; border: 1px solid red;
+}
+/* End of Charts section*/

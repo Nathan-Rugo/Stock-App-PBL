@@ -6,7 +6,7 @@ import axios from 'axios';
 const Cards = ({ searchString }) => {
     const [trend, setTrend]= useState(null);
     const findValue = (elem) => elem.toLowerCase().includes (searchString.toLowerCase()); 
-    const api_key = process.env.STOCK_REACT_API_KEY;
+    const api_key = process.env.REACT_APP_STOCK_REACT_API_KEY;
     useEffect (() => {
     const fetchTrend = async() => {
     try {
